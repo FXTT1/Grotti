@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="Feedback.css" />
+    <title>Feedback</title>
+  </head>
+  <body>
+    <div id="panel" class="panel-container">
+      <strong>Como você avalia nosso site? <br /> customer support performance?</strong>
+      <div class="ratings-container">
+        <div class="rating">
+          <img src="Imagens/Feedback/bad.png" name="bad" alt="">
+          <small>Ruim</small>
+        </div>
+
+        <div class="rating">
+          <img src="Imagens/Feedback/good.png" name="good" alt=""/>
+          <small>Neutro</small>
+        </div>
+
+        <div class="rating active">
+          <img src="Imagens/Feedback/excellent.png" name="excellent" alt=""/>
+          <small>Bom</small>
+        </div>
+      </div>
+      <button class="btn" id="send">Enviar</button>
+    </div>
+    <script src="Feedback.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const sendButton = document.getElementById("send");
+        sendButton.addEventListener("click", function() {
+          setTimeout(function() {
+            window.location.href = "transition.html";
+          }, 5000);
+        });
+      });
+    </script>
+  </body>
+</html>

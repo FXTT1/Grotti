@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Contact_us.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="ico" href="scr/Logo.ico">
+    <title>Contact Us</title>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="transition.html">Home</a>
+    </nav>
+    <div class="container">
+        <form method="post" action="Contact_us.php">
+            <h1>Contact Us</h1>
+            <input type="text" id="primeiroNome" placeholder="Nome" name="Nome" required>
+            <input type="text" id="ultimoNome" placeholder="Sobrenome" name="Sobrenome" required>
+            <input type="email" id="email" placeholder="Email" name="Email" required>
+            <input type="text" id="assunto" placeholder="Assunto" name="Assunto" required>
+            <h4>Escreva Sua Mensagem Aqui</h4>
+            <textarea name="mensagem" required></textarea>
+            <input type="submit" value="Enviar" id="button" required>
+        </form>
+    </div>
+</body>
+</html>

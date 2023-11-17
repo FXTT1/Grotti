@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif; 
+    
+}
+.body {
+    overflow: hidden;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(Imagens/Showroom/RSX.jpg);
+    background-color: rgba(0,0,0,0.5);
+    background-position: center;
+    background-blend-mode: multiply;
+    background-size: cover;
+    transition: background-image 2s;
+}
+
+
+  /* Ajusta as informacoes dos carros */
+.info{
+    width: 100%;
+    padding: 0 7%;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    position: fixed;
+    bottom: 50px;
+    left: 0;
+}
+.info div{
+    margin: 0 20px;
+}
+.info div h2{
+    font-size: 44px;
+    font-weight: 400;
+}
+.info .line{
+    flex: 1;
+    background: #fff;
+    height: 4px;
+}
+
+  /* Ajusta os botoes dos outros carros */
+.btn {
+	box-shadow: 3px 3px 7px 0px #000000;
+	background-color:transparent;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+    background: #ffffff9f;
+	font-weight: 600;
+    font-size: 15px;
+	padding: 11px 15px;
+	text-decoration:none;
+    position: relative;
+    border-radius: 2px 20px;
+    transition: 0.3s;
+    margin-top: 20px;
+    left: 72%;
+    margin-left: 10px;
+}
+
+.btn:hover {
+	background-color:transparent;
+}
+.btn:active {
+	position:relative;
+	top: 1px;
+}
+
+
+  /* Home */
+.DIV a{
+    position: absolute;
+    font-size: 18px;
+    position: flex;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    margin-left: 40px;
+    top: 15px;
+    text-decoration: none;
+    font-family: 'Kanit', sans-serif;
+}
+
+.DIV a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: rgb(255, 0, 0);
+    transition: .8s;
+}
+
+.DIV a:hover::before {
+    width: 100%;
+}
+

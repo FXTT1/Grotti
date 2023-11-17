@@ -1,0 +1,26 @@
+body {
+    background-color: #000; 
+    margin: 0;
+    padding: 0;
+}
+
+#logo {
+    background: url('Imagens/lg.png') center center no-repeat;
+    width: 300px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    top: 50%;
+    left: 50%S;
+    transform: translate(-50%, -50%);
+    opacity: 0; 
+    animation: fadeIn 2s forwards;
+}
+
+    @keyframes fadeIn {
+        to {
+            opacity: 1; 
+        }
+    }    
+          

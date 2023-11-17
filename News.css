@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    min-height: 100vh;
+    font-size: 15px;
+    overflow-x: hidden;
+  }
+.logo{
+    width: 60px;
+}
+  .grid {
+    width: 1330px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    grid-template-areas:
+      "header header header"
+      "banner banner side"
+      "Manchete Noticia side";
+    margin: 0 auto;
+  }
+  
+  header {
+    margin-top: 20px;
+    grid-area: header;
+  }
+  
+
+  /* Ajusta a navbar HOME */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px auto;
+  }
+  
+  ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  ul li {
+    padding: 0px;
+    font-size: 15px;
+  }
+  
+  ul li a {
+    position: relative;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 20px;
+    font-family: 'Kanit', sans-serif;
+  }
+  
+  ul li a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: rgb(255, 0, 0);
+    transition: .8s;
+  }
+  
+  ul li a:hover::before {
+    width: 100%;
+}
+  /* Ajusta o banner e o icone */
+  .menu {
+    display: none;
+  }
+  
+  .banner {
+    width: 100%;
+    grid-area: banner;
+  }
+  
+  .banner img {
+    width: 100%;
+    border-radius: 0px 30px;
+  }
+  
+
+
+
+  /* Ajusta o titulo da noticia principal */
+  .Titulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+  }
+  
+
+
+
+  /* Ajusta a Noticia principal */
+  .heading h1 {
+    font-size: 30px;
+    font-family: "Inter";
+    width: 250px;
+    margin-left: 50px;
+  }
+  
+  .Manchete {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: start;
+    align-items: start;
+    grid-area: textBox;
+    width: 250px;
+    margin-left: 300px;
+  }
+  
+  /* tamanho e estilo da manchete */
+  .Manchete p {
+    font-size: 15px;
+    font-family: "Inter";
+    margin-bottom: 20px;
+    width: 250px;
+  }
+  
+  .Manchete button {
+    width: 60%;
+    padding: 10px;
+    border: none;
+    color: hsl(36, 100%, 99%);
+    background-color: hsl(0, 100%, 50%);
+    border-radius: 2px 20px;
+  }
+  
+  .Manchete button:hover {
+    cursor: pointer;
+    background-color: hsl(240, 100%, 5%);
+    color: hsl(36, 100%, 99%);
+    border: 1px solid hsl(240, 100%, 5%);
+  }
+  
+  /* Ajusta a caixa das noticias e o texto do news */
+  .BoxInfo {
+    background-color: hsla(0, 0%, 0%, 0.795);
+    color: hsl(36, 100%, 99%);
+    width: 450px;
+    grid-area: side;
+    border-radius: 0px 40px;
+  }
+  
+  .news {
+    color: hsl(0, 100%, 50%);
+    font-size: 40px;
+    font-family: "Inter";
+    margin-bottom: 10px;
+    margin-left: 10px;
+    padding-top: 40px;
+  }
+  
+  .BoxInfo h3:hover {
+    color: hsl(0, 100%, 50%);
+    cursor: pointer;
+  }
+  
+  /* Ajusta as noticias texto estilo etc */
+  .Noticias {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    margin: 0px 10px;
+    line-height: 2;
+    border-bottom: 1px solid hsl(36, 100%, 99%);
+  }
+  
+  .Noticias p {
+    opacity: 0.5;
+  }
+  

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Showroom.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="ico" href="scr/Logo.ico">
+    <title>Showroom</title>
+</head>
+<body>
+    <div class="DIV">
+        <nav class="Home">
+            <a href="transition.html">Home</a>
+    </div>
+    <div class="header" id="header">
+        <a href="#" id="rsx" class="btn">Itali RSX</a>
+        <a href="#" id="furia" class="btn">Furia</a>
+        <a href="#" id="visione" class="btn">Visione</a>
+        <a href="#" id="stinger" class="btn">Stinger</a>
+        <div class="info">
+            <div>
+                <h2>Engine</h2>
+                <p id="engine">M4 V12</p>
+            </div>
+            <div>
+                <h2>Top Speed</h2>
+                <p id="topspeed">263.15 km/h</p>
+            </div>
+            <div>
+                <h2>Gears</h2>
+                <p id="maxgears">8 Gears</p>
+            </div>
+            <div class="line">
+            </div>
+            <div>
+                <h2 id="modelocarro">Itali RSX</h2>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        var header = document.getElementById("header");
+        
+        var furia = document.getElementById("furia");
+        var rsx = document.getElementById("rsx");
+        var visione = document.getElementById("visione");
+        var stinger = document.getElementById("stinger");
+
+        
+        var modelocarro = document.getElementById("modelocarro");
+        var engine = document.getElementById("engine");
+        var topspeed = document.getElementById("topspeed");
+        var maxgears = document.getElementById("maxgears");
+
+        rsx.onclick = function(){
+            header.style.backgroundImage = "url(Imagens/Showroom/RSX.jpg)";
+            modelocarro.innerHTML = "Itali RSX";
+            engine.innerHTML = "M4 V12";
+            topspeed.innerHTML = "263.15 Km/h";
+            maxgears.innerHTML = "8 Gears";
+        }
+        furia.onclick = function(){
+            header.style.backgroundImage = "url(Imagens/Showroom/Furia.png)";
+            modelocarro.innerHTML = "Furia";
+            engine.innerHTML = "M4 V12";
+            topspeed.innerHTML = "261.2 Km/h";
+            maxgears.innerHTML = "6 Gears";
+        }
+        visione.onclick = function(){
+            header.style.backgroundImage = "url(Imagens/Showroom/Visione.png)";
+            modelocarro.innerHTML = "Visione";
+            engine.innerHTML = "RMR V12";
+            topspeed.innerHTML = "293.1 Km/h";
+            maxgears.innerHTML = "6 Gears";
+        }
+        stinger.onclick = function(){
+            header.style.backgroundImage = "url(Imagens/Showroom/Stinger.jpg)";
+            modelocarro.innerHTML = "Stinger";
+            engine.innerHTML = "RR SOHC V8";
+            topspeed.innerHTML = "217 Km/h";
+            maxgears.innerHTML = "5 Gears";
+        }
+    </script>
+</body>
+</html>

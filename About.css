@@ -1,0 +1,169 @@
+body {
+    margin: 0%;
+    background-color: white;
+    overflow-x: hidden;
+  }
+
+  .header-main {
+    background-color: #000;
+    
+    }
+  
+    .header-main a{
+      position: relative;
+      font-size: 18px;
+      color: rgb(255, 255, 255);
+      font-weight: 500;
+      text-decoration: none;
+      margin-left: 20px;
+      font-family: 'Kanit', sans-serif;
+      overflow: hidden;
+  }
+  
+  .header-main a::before {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 0;
+      height: 3px;
+      background-color: rgb(255, 0, 0);
+      transition: .8s;
+  }
+  
+  .header-main a:hover::before {
+      width: 100%;
+  }
+    
+
+.header {
+  background-image: url("Imagens/About/Car.jpg"); 
+  background-size: cover; 
+  background-repeat: no-repeat;
+  text-align: center; 
+  padding: 200px; 
+  background-position-x: center;
+  background-position-y: center;
+  overflow: hidden;
+  
+}
+
+.header h1 {
+  color: white;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-weight: bolder;
+  font-size: 60px
+}
+
+.card {
+  padding: 20px; ;
+  text-align: center; 
+}
+
+.card img {
+  width: 25%;
+  height: auto;
+}
+
+.infos {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  list-style: none;
+  
+
+}
+
+.infos li {
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-right: 40px;
+  opacity: 0.7;
+  
+  
+} 
+
+.infos li:hover {
+  color: white;
+  opacity: 1.0;
+  transition: 0.9s;
+  
+} 
+
+.footer-word {
+  background-color: #0D0D0D;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  
+
+}
+
+.footer-logo img {
+  width: 80px;
+  height: auto;
+  opacity: 0.6;
+  transition: opacity 0.3s;
+}
+
+.footer-logo img:hover{
+  opacity: 1.0;
+
+}
+
+.footer-contatos p {
+  font-weight: bold;
+  text-align: justify;
+  
+}
+
+.footer-contatos ul {
+  list-style: none;
+  padding: 0;
+  display: flex; 
+}
+
+.footer-contatos li {
+  margin-right: 10px; 
+}
+
+.footer-contatos a {
+  text-decoration: none;
+}
+
+.footer-contatos img {
+  width: 30px;   
+  height: auto; 
+  margin-right: 2px; 
+}
+.footer-contatos a {
+  color: #fff; 
+  text-decoration: none;
+  display: inline-flex; 
+  align-items: center; 
+  margin-right: 10px; 
+
+}
+
+.footer-contatos a:hover {
+  color: #00c87b;
+  text-decoration: none;
+  transition: 1s;
+
+}
+
+.sub-footer {
+  background: #000;
+  color: #777;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  
+}
