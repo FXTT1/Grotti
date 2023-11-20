@@ -131,16 +131,13 @@ body {
   margin-right: 10px; 
 }
 
-.footer-contatos a {
-  text-decoration: none;
-}
 
 .footer-contatos img {
   width: 30px;   
   height: auto; 
   margin-right: 2px; 
 }
-.footer-contatos a {
+.wtz a {
   color: #fff; 
   text-decoration: none;
   display: inline-flex; 
@@ -149,8 +146,40 @@ body {
 
 }
 
-.footer-contatos a:hover {
+.wtz a:hover {
   color: #00c87b;
+  text-decoration: none;
+  transition: 1s;
+
+}
+
+.insta a {
+  color: #fff; 
+  text-decoration: none;
+  display: inline-flex; 
+  align-items: center; 
+  margin-right: 10px; 
+
+}
+
+.insta a:hover {
+  color: rgb(168, 3, 119);
+  text-decoration: none;
+  transition: 1s;
+
+}
+
+.fc a {
+  color: #ffffff; 
+  text-decoration: none;
+  display: inline-flex; 
+  align-items: center; 
+  margin-right: 10px; 
+
+}
+
+.fc a:hover {
+  color: #311ee2;
   text-decoration: none;
   transition: 1s;
 
