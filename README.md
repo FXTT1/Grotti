@@ -5,5 +5,6 @@ Este projeto foi desenvolvido como parte do segundo período da faculdade, utili
 
 
 # Bugs
-  - Algumas paginas ainda nao estao responsivas
+  - Algumas paginas ainda nao estão responsivas
   - O php precisa ser melhorado e posto no banco de dados
+  - falta criar o banco de dados para salvar os dados dos clientes
