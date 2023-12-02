@@ -8,4 +8,3 @@ Este projeto foi desenvolvido como parte do segundo período da faculdade, utili
   - Algumas paginas ainda nao estão responsivas
   - O php precisa ser melhorado e posto no banco de dados
   - O video ta com erro
-  - O php nao quer iniciar
